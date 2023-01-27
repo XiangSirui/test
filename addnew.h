@@ -2,8 +2,9 @@
 #define ADDNEW_H
 
 #include <QDialog>
-
-namespace Ui {
+static QString *str_name;
+namespace Ui
+{
 class Addnew;
 }
 
@@ -13,9 +14,10 @@ class Addnew : public QDialog
 
 public:
     explicit Addnew(QWidget *parent = nullptr);
+    QString a[6];
     ~Addnew();
 
-private slots:
+public slots:
     void on_pushButton_clicked();
 
 private:

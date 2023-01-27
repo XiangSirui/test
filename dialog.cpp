@@ -3,6 +3,8 @@
 #include "addnew.h"
 #include "about.h"
 #include "history.h"
+#include "windows.h"
+#include <QDebug>
 //主界面窗口设置
 Dialog::Dialog(QWidget *parent)
     : QDialog(parent)
@@ -14,20 +16,22 @@ Dialog::Dialog(QWidget *parent)
 Dialog::~Dialog()
 {
     delete ui;
-}
+}  //析构函数
 
 
 void Dialog::on_pushButton_clicked()
 {
-    Addnew *a= new Addnew;
-    a->show();
-}
+    Addnew *add= new Addnew();
+    add->exec();
+    //qDebug()<<str_name[0];
+}   //打开新增面板
 
 void Dialog::on_pushButton_2_clicked()
 {
     About *about= new About;
     about->show();
-}
+
+}  //打开关于面板
 
 void Dialog::on_pushButton_3_toggled(bool checked)
 {
@@ -47,6 +51,7 @@ void Dialog::on_pushButton_3_toggled(bool checked)
 
 void Dialog::on_radioButton_clicked()
 {
+    Sleep(1000);
     ui->radioButton->close();
     ui->label_2->close();
 }

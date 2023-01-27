@@ -166,7 +166,46 @@
     </widget>
    </item>
    <item row="6" column="2">
-    <widget class="QComboBox" name="comboBox"/>
+    <widget class="QComboBox" name="comboBox">
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>无</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>不紧急</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>需要注意</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>比较紧急</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>立即动身</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>即将发生</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>过期</string>
+      </property>
+     </item>
+    </widget>
    </item>
   </layout>
  </widget>
