@@ -18,7 +18,11 @@
     <widget class="QLabel" name="label">
      <property name="text">
       <string>这是版本说明：
-版本：0.1</string>
+版本：0.3 
+采用了一个窗口来收纳历史记录
+实现了添加界面写入文档的操作
+实现了读文件的操作（虽然只能读最后一行）
+</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>

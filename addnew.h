@@ -2,7 +2,7 @@
 #define ADDNEW_H
 
 #include <QDialog>
-static QString *str_name;
+//static QString *str_name;
 namespace Ui
 {
 class Addnew;

@@ -20,19 +20,22 @@ SOURCES += \
     addnew.cpp \
     history.cpp \
     main.cpp \
-    dialog.cpp
+    dialog.cpp \
+    note.cpp
 
 HEADERS += \
     about.h \
     addnew.h \
     dialog.h \
-    history.h
+    history.h \
+    note.h
 
 FORMS += \
     about.ui \
     addnew.ui \
     dialog.ui \
-    history.ui
+    history.ui \
+    note.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

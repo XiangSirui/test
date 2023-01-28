@@ -14,6 +14,7 @@ class Dialog : public QDialog
 public:
     Dialog(QWidget *parent = nullptr);
     ~Dialog();
+    void AddNew(QString name,int num);
 
 public slots:
     void on_pushButton_clicked();
@@ -21,10 +22,6 @@ public slots:
     void on_pushButton_2_clicked();
 
     void on_pushButton_3_toggled(bool checked);
-
-    void on_frame_customContextMenuRequested(const QPoint &pos);
-
-    void on_radioButton_clicked();
 
     void on_pushButton_4_clicked();
 
