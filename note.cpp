@@ -3,7 +3,7 @@
 #include <windows.h>
 #include <QFile>
 Note::Note(QWidget *parent) :
-    QDialog(parent),
+    QWidget(parent),
     ui(new Ui::Note)
 {
     ui->setupUi(this);
@@ -12,7 +12,7 @@ Note::Note(QWidget *parent) :
 }
 
 Note::Note(QWidget *parent,QString thing,QString time,QString Date,QString ddl,QString note) :
-    QDialog(parent),
+    QWidget(parent),
     ui(new Ui::Note)
 {
 

@@ -32,7 +32,7 @@ void Addnew::on_pushButton_clicked()
     if(file.open(QIODevice::Append| QIODevice::Text))
     {
         QTextStream stream(&file);
-        stream<<count<<" "<<"note"<<count<<" ";     //用于写入文件的实现
+        stream<<count<<" "<<"N"<<" ";     //用于写入文件的实现
         for(int i=0;i<5;i++)
         {
              stream<<str[i]<<" ";

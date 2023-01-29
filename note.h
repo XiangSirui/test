@@ -7,7 +7,7 @@ namespace Ui {
 class Note;
 }
 
-class Note : public QDialog
+class Note : public QWidget
 {
     Q_OBJECT
 
