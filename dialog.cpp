@@ -7,6 +7,7 @@
 #include <QDebug>
 #include "note.h"
 #include <QFile>
+#pragma execution_character_set("utf-8")     //显示中文，需要log.txt文件也调整。
 //主界面窗口设置
 Dialog::Dialog(QWidget *parent)
     : QDialog(parent)
@@ -54,27 +55,28 @@ void Dialog::on_pushButton_4_clicked()
     history *a =new history;
     a->show();
 }
-void Dialog::AddNew(QString name,int num)
+void Dialog::AddNew()
 {
-
     QFile file;
     QString str_read[7];
     QString strline;
-    file.setFileName("C:/Users/11846/Desktop/Noname/log/log.txt");
-    if(file.open(QIODevice::ReadOnly))
+    int num;    //每个事项前的数字
+    file.setFileName("C:/Users/11846/Desktop/Noname/log/log.txt");    //设置要处理的文件的路径
+    if(file.open(QIODevice::ReadOnly))                           //只读
     {
-    while(! file.atEnd())
+    while(! file.atEnd())                                        //当没有读到文件末尾时
     {
-            strline = file.readLine();
-        QStringList list = strline.split(" ");
+        strline = file.readLine();                               //读取一行
+        QStringList list = strline.split(" ");                   //以一个空格为分隔符
         for(int i=0;i<7;i++)
         {
             str_read[i]= list[i];
         }
+        num = str_read[0].toInt();         //将第一个数据转化为int类
+
+        Note n1(ui->frame_2,str_read[2],str_read[3],str_read[4],str_read[5],str_read[6]);
+        n1.move(2,2+70*(num-1));  //提醒事项的移动
+        n1.exec();
     }
-    name=str_read[1];//num=str_read[0];
-    Note n1(ui->frame_2,str_read[2],str_read[3],str_read[4],str_read[5],str_read[6]);
-    n1.move(2,2+60*(num-1));  //提醒事项的移动
-    n1.exec();
-    }     //仍然存在问题
+    }
 }

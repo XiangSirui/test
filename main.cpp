@@ -10,9 +10,7 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     Dialog *w = new Dialog;
     w->show();
-    w->AddNew("name1",1);
-    w->AddNew("name2",2);
-    //Note *n2=new Note;
-    //n2->show();
+    w->AddNew();
+    //w->AddNew("name2",2);
     return a.exec();
 }

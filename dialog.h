@@ -11,10 +11,10 @@ class Dialog : public QDialog
 {
     Q_OBJECT
 
-public:
+public:;
     Dialog(QWidget *parent = nullptr);
     ~Dialog();
-    void AddNew(QString name,int num);
+    void AddNew();
 
 public slots:
     void on_pushButton_clicked();
