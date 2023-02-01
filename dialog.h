@@ -9,14 +9,14 @@ QT_END_NAMESPACE
 
 class Dialog : public QDialog
 {
-    Q_OBJECT
+Q_OBJECT
 
 public:
     std::vector<Note*> note_vector;
     Dialog(QWidget *parent = nullptr);
     ~Dialog();
-    void AddNew();
-
+    void onCreate();
+    void Shownote();
 public slots:
     void on_pushButton_clicked();
 
@@ -26,7 +26,7 @@ public slots:
 
     void on_pushButton_4_clicked();
 
-private:
+public:
     Ui::Dialog *ui;
 };
 #endif // DIALOG_H

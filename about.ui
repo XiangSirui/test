@@ -19,11 +19,10 @@
      <property name="text">
       <string>这是版本说明：
 版本：0.4 
-实现了读文件的操作（完全实现）
-可以全部一起显示了（感谢外援的帮助）
-问题：现在不能从文件中读中文
-现在不具备刷新功能
-提醒事项打钩后下次还会再有（做不完的ddl？）</string>
+采用了一个窗口来收纳历史记录
+实现了添加界面写入文档的操作
+实现了读文件的操作（虽然只能读最后一行）
+</string>
      </property>
      <property name="alignment">
       <set>Qt::AlignCenter</set>

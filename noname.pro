@@ -21,14 +21,16 @@ SOURCES += \
     history.cpp \
     main.cpp \
     dialog.cpp \
-    note.cpp
+    note.cpp \
+    vector_.cpp
 
 HEADERS += \
     about.h \
     addnew.h \
     dialog.h \
     history.h \
-    note.h
+    note.h \
+    vector_.h
 
 FORMS += \
     about.ui \

@@ -10,7 +10,6 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     Dialog *w = new Dialog;
     w->show();
-    w->AddNew();
-    //w->AddNew("name2",2);
+    w->onCreate();   //显示提醒事项的函数
     return a.exec();
 }

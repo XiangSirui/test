@@ -1,19 +1,22 @@
 #ifndef ADDNEW_H
 #define ADDNEW_H
-
+#include "note.h"
 #include <QDialog>
+#include "dialog.h"
 //static QString *str_name;
 namespace Ui
 {
-class Addnew;
+    class Addnew;
 }
 
 class Addnew : public QDialog
 {
-    Q_OBJECT
+Q_OBJECT
 
 public:
-    explicit Addnew(QWidget *parent = nullptr);
+    std::vector<Note*> *note_vector;
+    explicit Addnew(std::vector<Note*> *note_vector);
+    //Addnew(QWidget *parent = nullptr);
     QString a[6];
     ~Addnew();
 
