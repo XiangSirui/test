@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'addnew.ui'
 **
-** Created by: Qt User Interface Compiler version 5.14.0
+** Created by: Qt User Interface Compiler version 5.13.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -94,6 +94,8 @@ public:
         comboBox->addItem(QString());
         comboBox->addItem(QString());
         comboBox->addItem(QString());
+        comboBox->addItem(QString());
+        comboBox->addItem(QString());
         comboBox->setObjectName(QString::fromUtf8("comboBox"));
         comboBox->setEditable(true);
 
@@ -134,15 +136,17 @@ public:
     {
         Addnew->setWindowTitle(QCoreApplication::translate("Addnew", "\346\267\273\345\212\240", nullptr));
         timeLabel->setText(QCoreApplication::translate("Addnew", "\346\227\266\351\227\264(Time)", nullptr));
-        label_2->setText(QCoreApplication::translate("Addnew", "\351\207\215\350\246\201\346\200\247(Impo)", nullptr));
+        label_2->setText(QCoreApplication::translate("Addnew", "\347\264\247\346\200\245\347\250\213\345\272\246(ddl)", nullptr));
         label->setText(QCoreApplication::translate("Addnew", "\346\267\273\345\212\240\347\225\214\351\235\242", nullptr));
         dateLabel->setText(QCoreApplication::translate("Addnew", "\346\227\245\346\234\237(Date)", nullptr));
         timeTimeEdit->setDisplayFormat(QCoreApplication::translate("Addnew", "0H:mm", nullptr));
         comboBox->setItemText(0, QCoreApplication::translate("Addnew", "\346\227\240", nullptr));
-        comboBox->setItemText(1, QCoreApplication::translate("Addnew", "\346\257\224\350\276\203\351\207\215\350\246\201", nullptr));
-        comboBox->setItemText(2, QCoreApplication::translate("Addnew", "\351\207\215\350\246\201", nullptr));
-        comboBox->setItemText(3, QCoreApplication::translate("Addnew", "\351\235\236\345\270\270\351\207\215\350\246\201", nullptr));
-        comboBox->setItemText(4, QCoreApplication::translate("Addnew", "\344\274\230\345\205\210", nullptr));
+        comboBox->setItemText(1, QCoreApplication::translate("Addnew", "\344\270\215\347\264\247\346\200\245", nullptr));
+        comboBox->setItemText(2, QCoreApplication::translate("Addnew", "\351\234\200\350\246\201\346\263\250\346\204\217", nullptr));
+        comboBox->setItemText(3, QCoreApplication::translate("Addnew", "\346\257\224\350\276\203\347\264\247\346\200\245", nullptr));
+        comboBox->setItemText(4, QCoreApplication::translate("Addnew", "\347\253\213\345\215\263\345\212\250\350\272\253", nullptr));
+        comboBox->setItemText(5, QCoreApplication::translate("Addnew", "\345\215\263\345\260\206\345\217\221\347\224\237", nullptr));
+        comboBox->setItemText(6, QCoreApplication::translate("Addnew", "\350\277\207\346\234\237", nullptr));
 
         nameLabel->setText(QCoreApplication::translate("Addnew", "\345\220\215\347\247\260(Name)", nullptr));
         Label->setText(QCoreApplication::translate("Addnew", "\345\244\207\346\263\250(Note)", nullptr));

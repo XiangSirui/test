@@ -22,4 +22,5 @@ void Vector_::vector_for_file(std::vector<Note *> note_vector)
                 //
             }
         }
+        file.close();
     }

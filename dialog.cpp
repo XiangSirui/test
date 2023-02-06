@@ -25,7 +25,7 @@ Dialog::~Dialog() {
 void Dialog::on_pushButton_clicked() {
     Addnew *add = new Addnew(&note_vector);
     add->exec();
-    Shownote();  //刷新
+    onRefresh() ; //刷新
 }   //打开新增面板
 
 void Dialog::on_pushButton_2_clicked() {
@@ -50,29 +50,8 @@ void Dialog::on_pushButton_4_clicked() {
     a->show();
 }
 
-void Dialog::Shownote() {//刷新时调用
-    //
-    if (ui->frame_2->widget()->layout() != nullptr) {//删除原有布局
-        QLayoutItem *item;
-        while ((item = ui->frame_2->widget()->layout()->takeAt(0)) != nullptr) {
-            delete item->widget();
-            delete item;
-        }
-        delete ui->frame_2->widget()->layout();
-    }
-    QGridLayout *gridLayout = new QGridLayout();                   //网格布局
 
-    //
-    for(int i=0;i<note_vector.size();i++){
-        if (note_vector.at(i)->finish == 0) {
-            gridLayout->addWidget(note_vector.at(i));
-    }
-        ui->frame_2->widget()->setLayout(gridLayout);
-        repaint();     //顺序输出vector所有的东西
-    }
-}
-
-void Dialog::onCreate() {//创建时调用
+void Dialog::onRefresh() {//创建时调用
 //
     if (ui->frame_2->widget()->layout() != nullptr) {//删除原有布局
         QLayoutItem *item;

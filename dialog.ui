@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>780</width>
+    <width>771</width>
     <height>172</height>
    </rect>
   </property>
@@ -137,9 +137,6 @@
       </item>
       <item row="3" column="0">
        <widget class="QScrollArea" name="frame_2">
-        <property name="horizontalScrollBarPolicy">
-         <enum>Qt::ScrollBarAlwaysOff</enum>
-        </property>
         <property name="widgetResizable">
          <bool>true</bool>
         </property>
@@ -148,8 +145,8 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>734</width>
-           <height>74</height>
+           <width>725</width>
+           <height>71</height>
           </rect>
          </property>
         </widget>

@@ -43,7 +43,7 @@
    <item row="5" column="0">
     <widget class="QLabel" name="label_2">
      <property name="text">
-      <string>重要性(Impo)</string>
+      <string>紧急程度(ddl)</string>
      </property>
     </widget>
    </item>
@@ -108,22 +108,32 @@
      </item>
      <item>
       <property name="text">
-       <string>比较重要</string>
+       <string>不紧急</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>重要</string>
+       <string>需要注意</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>非常重要</string>
+       <string>比较紧急</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>优先</string>
+       <string>立即动身</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>即将发生</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>过期</string>
       </property>
      </item>
     </widget>

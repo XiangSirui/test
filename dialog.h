@@ -15,8 +15,7 @@ public:
     std::vector<Note*> note_vector;
     Dialog(QWidget *parent = nullptr);
     ~Dialog();
-    void onCreate();
-    void Shownote();
+    void onRefresh();
 public slots:
     void on_pushButton_clicked();
 

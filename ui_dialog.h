@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'dialog.ui'
 **
-** Created by: Qt User Interface Compiler version 5.14.0
+** Created by: Qt User Interface Compiler version 5.13.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -42,7 +42,7 @@ public:
     {
         if (Dialog->objectName().isEmpty())
             Dialog->setObjectName(QString::fromUtf8("Dialog"));
-        Dialog->resize(780, 172);
+        Dialog->resize(771, 172);
         gridLayout_2 = new QGridLayout(Dialog);
         gridLayout_2->setSpacing(5);
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
@@ -97,11 +97,10 @@ public:
 
         frame_2 = new QScrollArea(frame);
         frame_2->setObjectName(QString::fromUtf8("frame_2"));
-        frame_2->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
         frame_2->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QString::fromUtf8("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 734, 74));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 725, 71));
         frame_2->setWidget(scrollAreaWidgetContents);
 
         gridLayout_3->addWidget(frame_2, 3, 0, 1, 1);

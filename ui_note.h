@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'note.ui'
 **
-** Created by: Qt User Interface Compiler version 5.14.0
+** Created by: Qt User Interface Compiler version 5.13.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -39,8 +39,6 @@ public:
         if (Note->objectName().isEmpty())
             Note->setObjectName(QString::fromUtf8("Note"));
         Note->resize(697, 96);
-        Note->setMinimumSize(QSize(697, 96));
-        Note->setMaximumSize(QSize(697, 96));
         gridLayout_3 = new QGridLayout(Note);
         gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
         gridLayout_2 = new QGridLayout();
@@ -63,9 +61,7 @@ public:
         frame->setFrameShadow(QFrame::Raised);
         frame->setMidLineWidth(1);
         gridLayout_4 = new QGridLayout(frame);
-        gridLayout_4->setSpacing(0);
         gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
-        gridLayout_4->setContentsMargins(0, 0, 0, 0);
         gridLayout = new QGridLayout();
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         label = new QLabel(frame);
