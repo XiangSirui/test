@@ -108,32 +108,22 @@
      </item>
      <item>
       <property name="text">
-       <string>不紧急</string>
+       <string>比较重要</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>需要注意</string>
+       <string>重要</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>比较紧急</string>
+       <string>非常重要</string>
       </property>
      </item>
      <item>
       <property name="text">
-       <string>立即动身</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>即将发生</string>
-      </property>
-     </item>
-     <item>
-      <property name="text">
-       <string>过期</string>
+       <string>紧迫</string>
       </property>
      </item>
     </widget>
