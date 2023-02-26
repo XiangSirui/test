@@ -18,26 +18,41 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     about.cpp \
     addnew.cpp \
+    appremind.cpp \
+    ball.cpp \
+    editdialog.cpp \
     history.cpp \
     main.cpp \
     dialog.cpp \
     note.cpp \
+    settingdia.cpp \
+    suspenddia.cpp \
     vector_.cpp
 
 HEADERS += \
     about.h \
     addnew.h \
+    appremind.h \
+    ball.h \
     dialog.h \
+    editdialog.h \
     history.h \
     note.h \
+    settingdia.h \
+    suspenddia.h \
     vector_.h
 
 FORMS += \
     about.ui \
     addnew.ui \
+    appremind.ui \
+    ball.ui \
     dialog.ui \
+    editdialog.ui \
     history.ui \
-    note.ui
+    note.ui \
+    settingdia.ui \
+    suspenddia.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

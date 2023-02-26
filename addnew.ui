@@ -14,6 +14,59 @@
    <string>添加</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="2">
+    <widget class="QLineEdit" name="nameLineEdit"/>
+   </item>
+   <item row="2" column="2">
+    <widget class="QTimeEdit" name="timeTimeEdit">
+     <property name="dateTime">
+      <datetime>
+       <hour>0</hour>
+       <minute>0</minute>
+       <second>0</second>
+       <year>2023</year>
+       <month>1</month>
+       <day>1</day>
+      </datetime>
+     </property>
+     <property name="date">
+      <date>
+       <year>2023</year>
+       <month>1</month>
+       <day>1</day>
+      </date>
+     </property>
+     <property name="minimumDate">
+      <date>
+       <year>2023</year>
+       <month>1</month>
+       <day>1</day>
+      </date>
+     </property>
+     <property name="currentSection">
+      <enum>QDateTimeEdit::HourSection</enum>
+     </property>
+     <property name="displayFormat">
+      <string>HH:mm</string>
+     </property>
+     <property name="calendarPopup">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="0">
+    <widget class="QLabel" name="Label">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>备注(Note)</string>
+     </property>
+    </widget>
+   </item>
    <item row="4" column="2">
     <widget class="QLineEdit" name="LineEdit">
      <property name="minimumSize">
@@ -24,33 +77,10 @@
      </property>
     </widget>
    </item>
-   <item row="1" column="2">
-    <widget class="QLineEdit" name="nameLineEdit"/>
-   </item>
-   <item row="2" column="0">
-    <widget class="QLabel" name="timeLabel">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>23</height>
-      </size>
-     </property>
-     <property name="text">
-      <string>时间(Time)</string>
-     </property>
-    </widget>
-   </item>
    <item row="5" column="0">
     <widget class="QLabel" name="label_2">
      <property name="text">
-      <string>紧急程度(ddl)</string>
-     </property>
-    </widget>
-   </item>
-   <item row="0" column="0">
-    <widget class="QLabel" name="label">
-     <property name="text">
-      <string>添加界面</string>
+      <string>重要程度(Impo)</string>
      </property>
     </widget>
    </item>
@@ -73,33 +103,23 @@
      </property>
     </widget>
    </item>
-   <item row="2" column="2">
-    <widget class="QTimeEdit" name="timeTimeEdit">
-     <property name="dateTime">
-      <datetime>
-       <hour>0</hour>
-       <minute>0</minute>
-       <second>0</second>
-       <year>2023</year>
-       <month>1</month>
-       <day>1</day>
-      </datetime>
+   <item row="2" column="0">
+    <widget class="QLabel" name="timeLabel">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>23</height>
+      </size>
      </property>
-     <property name="currentSection">
-      <enum>QDateTimeEdit::NoSection</enum>
-     </property>
-     <property name="displayFormat">
-      <string>0H:mm</string>
-     </property>
-     <property name="calendarPopup">
-      <bool>true</bool>
+     <property name="text">
+      <string>时间(Time)</string>
      </property>
     </widget>
    </item>
    <item row="5" column="2">
     <widget class="QComboBox" name="comboBox">
      <property name="editable">
-      <bool>true</bool>
+      <bool>false</bool>
      </property>
      <item>
       <property name="text">
@@ -135,16 +155,10 @@
      </property>
     </widget>
    </item>
-   <item row="4" column="0">
-    <widget class="QLabel" name="Label">
-     <property name="minimumSize">
-      <size>
-       <width>0</width>
-       <height>50</height>
-      </size>
-     </property>
+   <item row="0" column="2">
+    <widget class="QPushButton" name="pushButton">
      <property name="text">
-      <string>备注(Note)</string>
+      <string>完成</string>
      </property>
     </widget>
    </item>
@@ -168,24 +182,80 @@
        <minute>0</minute>
        <second>0</second>
        <year>2023</year>
-       <month>1</month>
-       <day>1</day>
+       <month>2</month>
+       <day>6</day>
       </datetime>
      </property>
      <property name="displayFormat">
-      <string>yyyy/0M/0d</string>
+      <string>yyyy/MM/dd</string>
      </property>
      <property name="calendarPopup">
       <bool>true</bool>
      </property>
     </widget>
    </item>
-   <item row="0" column="2">
-    <widget class="QPushButton" name="pushButton">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
      <property name="text">
-      <string>完成</string>
+      <string>添加界面</string>
      </property>
     </widget>
+   </item>
+   <item row="6" column="0">
+    <widget class="QLabel" name="label_3">
+     <property name="text">
+      <string>重复(Repeat)</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="2">
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,1,1,5">
+     <item>
+      <widget class="QCheckBox" name="checkBox">
+       <property name="text">
+        <string>重复</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSpinBox" name="spinBox">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>次</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_2">
+       <item>
+        <property name="text">
+         <string>每天</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>每两天</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>每周</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>每两周</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
    </item>
   </layout>
  </widget>

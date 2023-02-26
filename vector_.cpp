@@ -18,7 +18,9 @@ void Vector_::vector_for_file(std::vector<Note *> note_vector)
                 stream<<note_vector.at(i)->Time<<" ";
                 stream<<note_vector.at(i)->Date<<" ";
                 stream<<note_vector.at(i)->ddl<<" ";
-                stream<<note_vector.at(i)->note<<" "<<"#\n";  //n n n n n n #\n
+                stream<<note_vector.at(i)->note<<" ";
+                stream<<note_vector.at(i)->repeat_times<<" ";
+                stream<<note_vector.at(i)->repeat_gap<<" #\n";
                 //
             }
         }
