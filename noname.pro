@@ -20,8 +20,10 @@ SOURCES += \
     addnew.cpp \
     appremind.cpp \
     ball.cpp \
+    datetime.cpp \
     editdialog.cpp \
     history.cpp \
+    lengthen.cpp \
     main.cpp \
     dialog.cpp \
     note.cpp \
@@ -34,9 +36,11 @@ HEADERS += \
     addnew.h \
     appremind.h \
     ball.h \
+    datetime.h \
     dialog.h \
     editdialog.h \
     history.h \
+    lengthen.h \
     note.h \
     settingdia.h \
     suspenddia.h \
@@ -47,9 +51,11 @@ FORMS += \
     addnew.ui \
     appremind.ui \
     ball.ui \
+    datetime.ui \
     dialog.ui \
     editdialog.ui \
     history.ui \
+    lengthen.ui \
     note.ui \
     settingdia.ui \
     suspenddia.ui

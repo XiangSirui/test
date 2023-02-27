@@ -8,11 +8,19 @@
 #include <QCheckBox>
 #include <QCloseEvent>
 #include "suspenddia.h"
-
+#include <QTime>
+#include <QString>
+#include <QObject>
+#include "datetime.h"
+#include <QLabel>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Dialog; }
 QT_END_NAMESPACE
+
+extern QString name;
+extern QString thing;
+extern QString importance;
 
 class Dialog : public QDialog
 {
@@ -40,8 +48,18 @@ public slots:
 
     void on_pushButton_5_toggled(bool checked);
 
+    void timeUpdate(void);
+
 public:
     Ui::Dialog *ui;
+    Ui::dateTime  *warning;
+    Ui::Dialog *warningit;
+    QDateTime datetime;
+    QTimer *timer;
+    QString systime;
+    QString str_time[10][7];
+    int sign[10] = {0};
+    int m;
 
 private:
     int nextTime = 0;   // 说明有下一次
